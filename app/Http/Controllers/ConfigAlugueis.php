@@ -228,7 +228,15 @@ class ConfigAlugueis extends Controller
 
 			$clientes = DB::table('config_clientes')->where('deleted', '0')->get();
 
-			$veiculos = DB::table('config_veiculos')->where('deleted', '0')->get();
+			$veiculos = DB::table('config_veiculos')
+				->leftJoin('config_alugueis', function ($join) {
+					$join->on('config_veiculos.id', '=', 'config_alugueis.veiculo_id')
+						->where('config_alugueis.situacao', '=', '1');
+				})
+				->whereNull('config_alugueis.id')
+				->where('config_veiculos.deleted', '0')
+				->select('config_veiculos.*')
+				->get();
 
 			return Inertia::render("ConfigAlugueis/Create", [
 				'funcionarios' => $funcionarios,
@@ -348,7 +356,15 @@ class ConfigAlugueis extends Controller
 
 			$clientes = DB::table('config_clientes')->where('deleted', '0')->get();
 
-			$veiculos = DB::table('config_veiculos')->where('deleted', '0')->get();
+			$veiculos = DB::table('config_veiculos')
+				->leftJoin('config_alugueis', function ($join) {
+					$join->on('config_veiculos.id', '=', 'config_alugueis.veiculo_id')
+						->where('config_alugueis.situacao', '=', '1');
+				})
+				->whereNull('config_alugueis.id')
+				->where('config_veiculos.deleted', '0')
+				->select('config_veiculos.*')
+				->get();
 
 			return Inertia::render("ConfigAlugueis/Edit", [
 				"ConfigAlugueis" => $ConfigAlugueis,

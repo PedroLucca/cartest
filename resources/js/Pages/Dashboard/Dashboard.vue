@@ -100,7 +100,7 @@
 			</svg>
 		</div>
 		<div class="ml-6">
-			<h3 class="mb-1 leading-5 text-gray-800 dark:text-proconph-100 font-bold text-2xl">50</h3>
+			<h3 class="mb-1 leading-5 text-gray-800 dark:text-proconph-100 font-bold text-2xl">0</h3>
 			<p class="text-gray-600 dark:text-proconph-400 text-sm tracking-normal font-normal leading-5">Veículos</p>
 		</div>
 		
@@ -114,7 +114,7 @@
 
 		</div>
 		<div class="ml-6">
-			<h3 class="mb-1 leading-5 text-proconph-800 dark:text-proconph-100 font-bold text-2xl">30</h3>
+			<h3 class="mb-1 leading-5 text-proconph-800 dark:text-proconph-100 font-bold text-2xl">0</h3>
 			<p class="text-gray-600 dark:text-proconph-400 text-sm tracking-normal font-normal leading-5">Funcionários</p>
 		</div>
 		
@@ -127,7 +127,7 @@
 			</svg>
 		</div>
 		<div class="ml-6">
-			<h3 class="mb-1 leading-5 text-proconph-800 dark:text-proconph-100 font-bold text-2xl">20</h3>
+			<h3 class="mb-1 leading-5 text-proconph-800 dark:text-proconph-100 font-bold text-2xl">0</h3>
 			<p class="text-gray-600 dark:text-proconph-400 text-sm tracking-normal font-normal leading-5">Clientes</p>
 		</div>
 		
@@ -140,7 +140,7 @@
 			</svg>
 		</div>
 		<div class="ml-6">
-			<h3 class="mb-1 leading-5 text-proconph-800 dark:text-proconph-100 font-bold text-2xl">70</h3>
+			<h3 class="mb-1 leading-5 text-proconph-800 dark:text-proconph-100 font-bold text-2xl">0</h3>
 			<p class="text-gray-600 dark:text-proconph-400 text-sm tracking-normal font-normal leading-5">Aluguéis</p>
 		</div>
 		
